@@ -3,56 +3,98 @@
 h1{
   font-family: strait;
 }
+h2{
+  font-family: "Francois One", sans-serif;
+  font-size: 50px;
+  color: black;
+  text-align: left;
+}
+h6{
+  font-family: "Abel";
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+  padding-top: 18px;
+}
 
 header nav{
   display: flex;
   justify-content: flex-end;
 }
 
+/*for menu*/
 header p, a{
   padding: 20px;
 }
 
-.images{
-  width: 500px;
-  height: 350px;
-  overflow: hidden;
-}
-
-.offcenter{
-  height: 500px;
-  width: auto;
-  margin: -30px 0 0 -150px;
-}
-
-.coverart{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
 section .row{
-  border: solid;
-  border-width: thin;
-  color: silver;
-  margin: 7px;
+  padding-top: 10px;
 }
 
 h3{
-  font-family: "Helvectica"sans-serif;
-  padding-top: 18px;
-  font-size: 40px;
+  font-family: "Francois One", sans-serif;
+  font-size: 30px;
   color: black;
+  text-align: center;
 }
 
 section .row p{
   font-size: 18px;
   font-family: "Abel";
-  color: gray;
-  padding-left: 30px;
+  text-align: center;
 }
 
-.container{
-  max-width: 1000px;
+p{
+  font-size: 18px;
+  font-family: "Abel";
+}
+
+.menubut{
+  object-fit: none;
+  width: 1200px;
+  height: 200px;
+  background: center;
+  background-size: cover;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  transition: .5s ease;
+  background-image: url("https://lh3.googleusercontent.com/vWOK1VsJzI4aiLVthsQzZY4kg8_6JqbMoBUlmVgJ1lTMbj83qO8HNwbtzPDQJ67Pw3xepPxGDL4ZEzyGcCnrrZIMbCnJlIo7AWoGrzztnc7748rnHyOitKxtnlAyrLUZO6l7r2HpBAh7tiYDAhI8houwgcMFPLvrCk3BWNcEYKKXzmSCIBRznRPJEwpR69jDfqPIYrBvIBsE00yC4PX9l4V65RkHL9NFJtGJSZnorBQ31s7unvaRVClWdBNMbYUaZcQBCChdGy1E3hQNNOoNmsEEzQgCF2-pfirW23Kej_KYf9Kqf7HRJauhR9WRoy3eR9Bcgk52xYDHi7wcNOjaxZ8BSS3lHLe6Xd9m1WwJu7rAZEbZByqbzPyNf3vx_hFVVOll_gugY5gIuWK-G3YT4zTMkgLKpDmc_OaFj7BH_keRtBHbJeqZyIfdKrA9nV6PNHihX5yg3Q2KjP8jQvrel0D6o9W-ylaRG3MENyO8BlSra0a2mG3cqHh4zgCIUdnmGUJpb0CI7snR8kZR3DqDDZhaGi-NJVnSSa2MSOr52SR9xVJLemluAXIdEqxoXH8jWDP_Nf9AtPHNDpEu9LwCxpdQDqQsMWArgYuqqmk=w712-h949-no");
+}
+figure:hover .overlay{
+  opacity:1;
+}
+.centered{
+  background-position: center center;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+/* footer */
+footer .container img{
+  display: inline-block;
+  padding-right: 5px;
+  height: 50px;
+  width:auto;
+  margin-bottom:20px;
+}
+footer{
+  background-color: black;
+  margin-top: 20px;
+  padding: 30px 0 50px;
+}
+footer p{
+  color: #ffcc00;
+  display: inline;
 }
