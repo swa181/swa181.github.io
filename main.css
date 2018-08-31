@@ -1,180 +1,173 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+html, body{
+  height:100%;
+}
 
-body, html{
-  height: 100%;
+body{
+  background-color: white;
 }
-/* fonts */
+
 h1{
-  font-family: strait;
+  font-family: 'Kosugi', sans-serif;
+  font-size: 70px;
+  color: #416ae7;
 }
+
 h2{
-  font-family: "Francois One", sans-serif;
+  font-family: 'Francois One', sans-serif;
   font-size: 50px;
-  color: black;
+  color: white;
   text-align: left;
 }
+
 h3{
-  font-family: "Francois One", sans-serif;
-  font-size: 30px;
-  color: black;
-  text-align: center;
+  font-family: 'Abel', sans-serif;
+  color: white;
+  opacity: 0.9;
 }
-h6{
-  font-family: "Abel";
+
+h4{
   font-size: 20px;
-  color: gray;
-  text-align: center;
-  padding-top: 18px;
+  font-family: "Abel", sans-serif;
 }
+
 p{
   font-size: 18px;
-  font-family: "Abel";
-}
-
-header nav{
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* menu icon */
-.menuicon{
-  margin: 0 15px 15px 0;
-  z-index:1;
-  right:0;
-  bottom:0;
-  position: fixed;
-  cursor: pointer;
-}
-/* sticky footer */
-.sidenav{
-  width: 0;
-  position: fixed;
-  z-index:1;
-  right:0;
-  bottom:0;
-  background-color: #776e5f;
-  overflow-x: hidden;
-  padding: 10px 0;
-  margin: 0 10px 10px 0;
-  transition: 0.5s;
-}
-.sidenav a{
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
+  font-family: "Abel", sans-serif;
   color: white;
-  display: block;
-  font-family: "Abel";
-  transition: 0.3s'
-}
-.sidenav a:hover{
-  color: #ffcc00;
-}
-.sidenav .closebtn{
-  position: absolute;
-  font-size: 20px;
-  right: 5px;
-  bottom: 5px;
 }
 
-.parallax{
-  height:100%;
+* {
+  box-sizing: border-box;
+}
+
+.jumbotron{
+  margin:0;
+}
+
+#Landing h1, #Landing h4{
+  z-index:2;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#techSkills h3{
+  text-align:left;
+}
+
+#techSkills .container{
+  padding: 10px 0px;
+}
+
+#employment .container h2, #employment .container h3{
+  color: #416ae7;
+}
+
+#socialLinks li{
+  background-color: #416ae7;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  padding: 2px 12px 2px 7px;
+  margin: 3px;
+}
+#socialLinks li a{
+  font-family: 'Kosugi', sans-serif;
+}
+
+#myCarousel{
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.down a{
-  position: absolute;
+
+a:link{
+  color: white;
+}
+
+a:hover{
   text-decoration: none;
-  left: 47%;
-  font-size: 70px;
-  bottom: 0;
-  color: yellow;
+  color:white;
 }
 
-/*for menu*/
-header p, a{
-  padding: 20px;
+a:visited{
+  color:white;
 }
 
-section .row{
-  padding-top: 10px;
+.custrow{
+  display:flex;
+  flex-wrap: wrap;
+}
+.custcolumn{
+  flex: 25%;
+}
+.custcolumn img{
+  vertical-align: middle;
+  width:100%;
 }
 
-section .row p{
-  font-size: 18px;
-  font-family: "Abel";
-  text-align: center;
+.logo{
+  position: fixed;
+  color: white;
+  left: 60px;
+  top: 40px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  background-color: #416ae7;
+  padding: 10px;
 }
-
-svg text {
-  font-family: 'Fredoka One', cursive;
+.logo a{
+  font-family: 'Caveat Brush', cursive;
   font-size: 40px;
-  fill: #ffee00;
-  text-shadow: -1px 0 #f7962e, 0 1px #f7962e, 1px 0 #f7962e, 0 -1px #f7962e, 0 3px #f7962e;
+}
+.list-unstyled{
+  position: fixed;
+  display: block;
+  font-size: 20px;
+  left: 60px;
+  bottom: 40px;
 }
 
-.menubut{
-  object-fit: none;
-  width: 1200px;
-  height: 200px;
-  background: center;
-  background-size: cover;
+footer{
+  background-color:#363942;
+  padding: 50px 0;
 }
-
-.overlay{
-  position: absolute;
+footer ul{
+  list-style: none;
+  font-size: 18px;
+  font-family: "Abel", sans-serif;
+  color: white;
+}
+/* the white border */
+#top, #bottom, #left, #right{
+  background-color: white;
+  position: fixed;
+  display:block;
+}
+#left, #right{
   top: 0;
   bottom: 0;
-  left:0;
+  width: 15px;
+}
+#left{
+  left: 0;
+}
+#right{
   right: 0;
-  height: 100%;
-  width: 100%;
-  opacity:0;
-  transition: .5s ease;
-  background-image: url("https://lh3.googleusercontent.com/vWOK1VsJzI4aiLVthsQzZY4kg8_6JqbMoBUlmVgJ1lTMbj83qO8HNwbtzPDQJ67Pw3xepPxGDL4ZEzyGcCnrrZIMbCnJlIo7AWoGrzztnc7748rnHyOitKxtnlAyrLUZO6l7r2HpBAh7tiYDAhI8houwgcMFPLvrCk3BWNcEYKKXzmSCIBRznRPJEwpR69jDfqPIYrBvIBsE00yC4PX9l4V65RkHL9NFJtGJSZnorBQ31s7unvaRVClWdBNMbYUaZcQBCChdGy1E3hQNNOoNmsEEzQgCF2-pfirW23Kej_KYf9Kqf7HRJauhR9WRoy3eR9Bcgk52xYDHi7wcNOjaxZ8BSS3lHLe6Xd9m1WwJu7rAZEbZByqbzPyNf3vx_hFVVOll_gugY5gIuWK-G3YT4zTMkgLKpDmc_OaFj7BH_keRtBHbJeqZyIfdKrA9nV6PNHihX5yg3Q2KjP8jQvrel0D6o9W-ylaRG3MENyO8BlSra0a2mG3cqHh4zgCIUdnmGUJpb0CI7snR8kZR3DqDDZhaGi-NJVnSSa2MSOr52SR9xVJLemluAXIdEqxoXH8jWDP_Nf9AtPHNDpEu9LwCxpdQDqQsMWArgYuqqmk=w712-h949-no");
 }
-figure:hover .overlay{
-  opacity:1;
+#top, #bottom{
+  left: 0;
+  right: 0;
+  height:15px;
 }
-.centered{
-  background-position: center center;
+#top{
+  top: 0;
 }
-
-.tag{
-  color: white;
-  background-color: #ffcc00;
-  padding: 2px 8px;
-  margin: 1px 7px 5px 0px;
-  font-size: 15px;
-  font-family: "Abel";
+#bottom{
+  bottom: 0;
 }
-
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
-}
-
-/* footer */
-footer .container img, footer .container a{
-  display: inline-block;
-  padding-right: 5px;
-  height: auto;
-  width:50px;
-  margin-bottom:10px;
-}
-footer .container img:hover{
-  -webkit-filter : brightness(60%) sepia(50%) hue-rotate(11deg) saturate(20);
-  filter: brightness(60%) sepia(50%) hue-rotate(11deg) saturate(20);
-}
-footer{
-  background-color: #282827;
-  margin-top: 20px;
-  padding: 30px 0 50px;
-  text-align: center;
-}
-footer .container p{
-  color: #ffcc00;
-}
-
