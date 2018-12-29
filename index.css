@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+#landingPage {
+    height: 100%;
+    width: 100%;
+    background-color: #ffca00;
+    position: fixed;
+    transition: 0.4s;
+    overflow-y: hidden;
+    z-index: 1;
+}
+#landingPage h2 {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+#sidebar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+}
+#portIntro {
+    top: 0;
+    z-index: 1;
+    width: 0;
+    overflow-x: hidden;
+    text-overflow: clip;
+    position: fixed;
+    background-color: red;
+    transition: 0.4s;
+}
+#branding {
+    text-align: center;
+    margin: 20px;
+}
+h1 {
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    display: inline;
+    font-size: 20px;
+    padding: 0px 11px;
+    margin: 0px;
+}
+#github:hover{
+    fill:orange;
+}
+#deviantart:hover{
+    fill:green;
+}
+#linkedin:hover{
+    fill:blue;
+}
+#resume:hover {
+    fill: red;
+}
+#github, #deviantart, #linkedin, #resume {
+    margin: 2px 0px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+#main {
+    margin-left: 300px;
+
+}
+
+footer {
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+h6 {
+    margin: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: normal;
+}
