@@ -7,14 +7,7 @@
 </head>
 
 <body>
-    <div id="landingPage" onclick="closeLanding()">
-        <h2>
-            I am currently a Computer Science Major pursuing a Bachelor of Science at Simon Fraser University.<br/>
-            I like creating things.<br/>
-            Based in Vancouver, Canada.
-        </h2>
-    </div>
-    <div id="sidebar">
+    <!-- <div id="sidebar" style='opacity: 0;'>
         <div id='portIntro'>
             I am currently a Computer Science Major pursuing a Bachelor of Science at Simon Fraser University.<br/>
             I like creating things.<br/>
@@ -45,16 +38,10 @@
                 But still, I find you there<br/>
                 Next to me
             </p>
-        </div>
-
-
-    </div>
+        </div> -->
+    <!-- </div> -->
 
     <div id="main"></div>
-    <footer>
-        <h6>Sandy Wu// Last Updated in December 2018.</h6>
-    </footer>
-
 
     <!-- ReactJS: -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -71,18 +58,8 @@
             document.getElementById('landingPage').style.height = '0';
         }
     </script>
-    <script type="text/babel">
-        class MainEntree extends React.Component {
-            render() {
-                return (
-                    <div>
-                        <img src="chibihouse.png" width="400px"/>
-                        <h1>Wow it works!</h1>
-                    </div>
-                );
-            }
-        }
-        ReactDOM.render(<MainEntree/>, document.getElementById('main'));
+    <script type="text/babel" src='index.js'>
+
 
     </script>
 </body>

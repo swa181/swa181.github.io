@@ -1,27 +1,8 @@
 body {
     margin: 0;
+    background-color: #f7f4e3;
 }
 
-#landingPage {
-    height: 100%;
-    width: 100%;
-    background-color: #ffca00;
-    position: fixed;
-    transition: 0.4s;
-    overflow-y: hidden;
-    z-index: 1;
-}
-#landingPage h2 {
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
-}
-
-#sidebar {
-    width: 300px;
-    height: 100%;
-    position: fixed;
-}
 #portIntro {
     top: 0;
     z-index: 1;
@@ -36,7 +17,7 @@ body {
     text-align: center;
     margin: 20px;
 }
-h1 {
+/* h1 {
     background-color: black;
     color: #ffffff;
     font-family: 'Roboto Condensed', sans-serif;
@@ -45,7 +26,17 @@ h1 {
     font-size: 20px;
     padding: 0px 11px;
     margin: 0px;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #0d2260;
 }
+
+h1 {
+    font-size: 200px;
+}
+
 #github:hover{
     fill:orange;
 }
@@ -67,12 +58,6 @@ p {
 }
 
 
-
-#main {
-    margin-left: 300px;
-
-}
-
 footer {
     bottom: 0px;
     position: fixed;
@@ -80,9 +65,4 @@ footer {
     background-color: black;
     text-align: center;
     color: white;
-}
-h6 {
-    margin: 5px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: normal;
 }
