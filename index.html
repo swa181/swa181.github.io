@@ -10,60 +10,82 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Abel|Francois+One|Kosugi|Caveat+Brush" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Francois+One|Kosugi|Caveat+Brush|Source+Sans+Pro:700" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-  <section id="Landing" style="height:100%">
-    <img src="sandychibi.png" alt="Sandy Chibis" style="height:100%; float:right;z-index:1;max-height:100%;">
-    <img src="light1.png" alt="Light Bulbs" style="height:100%; float:left;z-index:1;max-height:100%;">
-    <h1>Sandy Wu</h1>
-    <h4>// Software Engineer and Freelance Illustrator</h4>
-  </section>
+    <section id="Landing" style="height:100%;">
+        <img src="sandy.png" alt="Sandy Chibis" style="height:100%; max-height:100%; position:absolute; top:0px; right:0px" >
+        <div class="container" style="height:100%">
+            <div class="landing-description">
+                <h4 >Hi! My name is</h4>
+                <h1 data-aos="fade-right">SANDY WU</h1>
+                <!-- <img class="logogif" src="sandygif.gif" height="100px"> -->
+                <h4>Software Engineer and Illustrator</h4>
+            </div>
+        </div>
+    </section>
 
   <!-- Introduction -->
-  <section id="intro" class="jumbotron" style="background-color:#ff3f3f; clear: left right;">
+  <svg class="header-tail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" preserveAspectRatio="none">
+      <polygon fill="#d1acfa" points="0,0 500,0 500,300 450,400"/>
+  </svg>
+  <section id="intro" class="jumbotron" style="background-color:transparent; clear: left right;">
     <div class="container">
-      <h2>PORTFOLIO: SANDY WU</h2>
-      <h3 style="text-align:left">
+      <div class="col-sm-4" style="text-align: center">
+          <img class="intro-profile" src="sandyprofile.png" height="300px"/>
+      </div>
+      <div class="col-sm-8">
+        <img src="sandygif.gif" height="70px" />
+        <h3 style="text-align:left;" data-aos="fade-right">
           I am currently a Computer Science Major pursuing a Bachelor of Science at Simon Fraser University.</br>
-          I like creating things.</br>
           Based in Vancouver, Canada.
-      </h3>
+        </h3>
+      </div>
     </div>
   </section>
 
   <!-- Technical Skills -->
-  <section id="techSkills" class="jumbotron" style="background-color:#f9b031">
+  <div id="SkillsHeader" height="150px"></div>
+  <div class="container">
+      <h5 class='heading'>SKILLS</h5>
+      <p style="color:#416ae7; text-align: center">Technical and Illustration Skills</p>
+  </div>
+  <section id="techSkills">
     <section class="container">
       <h2 style="color:#416ae7">Technical Skills</h2>
-      <h3>
-        As a second-year student at Simon Fraser University, I have taken courses that focused on:
+      <h3 data-aos="fade-right">
+        As a third-year student at Simon Fraser University, I have taken courses that focused on:
         <ul>
           <li>Data structures and algorithms,</li>
-          <li>Discrete Mathematics,</li>
+          <li>Discrete mathematics,</li>
+          <li>Database systems,</li>
+          <li>Compiler design,</li>
           <li>and Low-level computer architecture using the x86 assembly language.</li>
         </ul>
       </h3>
-      <div class="row">
+      <div class="row" data-aos="fade-down">
         <figure class="col-sm-4">
           <h3>
             Languages:
             <ul>
-              <li>Python</li>
-              <li>C/C++</li>
-              <li>HTML</li>
-              <li>CSS</li>
+                <li>Typescript</li>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
             </ul>
           </h3>
         </figure>
         <figure class="col-sm-4">
           <h3>
-            Operating Systems:
+            Frameworks:
             <ul>
-              <li>Linux</li>
-              <li>Microsoft Windows</li>
+              <li>React.js</li>
+              <li>Node.js</li>
             </ul>
           </h3>
         </figure>
@@ -71,8 +93,6 @@
           <h3>
             Tools:
             <ul>
-              <li>Linux Bash</li>
-              <li>Windows Command Prompt</li>
               <li>Github</li>
               <li>Bootstrap</li>
             </ul>
@@ -82,15 +102,15 @@
     </section>
     <section class="container">
       <h2 style="color:#416ae7">Illustration Skills</h2>
-      <h3>
+      <h3 data-aos="fade-right">
         Demonstration of skill:</br>
         <ul>
           <li>Received Second-Prize for the 2014 Vancouver Public Library Teen Reading Club Magnet-and-Button-Design Contest.</li>
           <li>Commissioned by clients online to illustrate custom digital drawings using Paint Tool Sai and Photoshop.</li>
         </ul>
       </h3>
-      <div class="row">
-        <figure class="col-sm-4">
+      <div class="row" >
+        <figure class="col-sm-4" data-aos="fade-down">
           <h3>
             Mediums:
             <ul>
@@ -107,7 +127,7 @@
           </ul>
           </h3>
         </figure>
-        <figure class="col-sm-4">
+        <figure class="col-sm-4" data-aos="fade-down">
           <h3>
             Tools:
             <ul>
@@ -130,50 +150,129 @@
     </section>
   </section>
 
+  <div class="workexp">
+    <div class="workexp-title">
+      <h2 class="heading" style="margin: 5px">
+        SWE Internships
+      </h2>
+    </div>
+    <div class="container workexp-content">
+      <div class="row" >
+          <div class='col-sm-4'>
+            <img src="chibihouse.png" width="100%" style="opacity: 0.9" />
+          </div>
+          <div class="col-sm-8" data-aos="fade-right">
+              <h3>September 2018 to April 2019</br><b>Software Engineer Intern @ Big Park Microsoft, Vancouver</b>
+                <ul>
+                  <li>Utilized React, TypeScript, and Knockout to integrate the OneDrive Photos prototype into the existing OneDrive for Consumer</li>
+                  <li>Utilized React, Babylon.js and Typescript to create an equirectangular image viewer for OneDrive Business</li>
+                </ul>
+              </h3>
+          </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Personal Project Experience -->
-  <section id="autodif" class="jumbotron" style="background-color:#4692dd">
-    <section class="container">
-      <h2>Automated Digital Filing System (autoDiF)</h2>
-      <h3>
-        Recognizing the heavy demand for repetitive labour that is required of an Administrative Assistant at Financial Literacy Counsel,
-        I devised an intuitive program that condenses the task of dragging-and-dropping digital scanned files into their respective client folders to one substantial *click*.
-        May 2018 to Present.</br></br>
-        Language: Python.</br></br>
-        Special Tools: Python's Tkinter GUI module. PyInstaller. Photoshop. Paint Tool Sai. favicon.cc.</br></br>
-      </h3>
-      <img src="autodif_run.png" alt="Autodif Running Program Image" class="center-block" style="border: dashed 3px white; max-width:100%;">
+  <section id="autodif">
+    <div class="container">
+      <h5 class='heading'>PROJECTS</h5>
+      <p style="color:#416ae7; text-align: center">Personal Projects</p>
+    </div>
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="overlay" style="background-color: #416ae7">
+            <img style="opacity:0.6; width:100%" src="autodif_run.png" alt="Autodif Running Program Image" class="center-block" style="border: dashed 3px white; max-width:100%;">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          hello
+        </div>
+      </div>
+    </div> -->
+
+    <section class="container autodif-container">
+      <div class="autodif-title">
+        <span class="ribbon2"><h3>1</h3></span>
+        <h2 style="text-align: center"><a href="https://github.com/swa181/autoDif" target="_blank">autoDiF</a></h2>
+      </div>
+      <div class="row autodif-row" >
+        <div class="col-sm-6" data-aos="fade-right">
+            <h3>
+                Recognizing the heavy demand for repetitive labour that is required of an Administrative Assistant at Financial Literacy Counsel,
+                I devised an intuitive program that condenses the task of dragging-and-dropping digital scanned files into their respective client folders to one substantial *click*.
+                May 2018 to Present.</br></br>
+                Language: Python.</br></br>
+                Special Tools: Python's Tkinter GUI module. PyInstaller. Photoshop. Paint Tool Sai. favicon.cc.</br></br>
+              </h3>
+          </div>
+          <div class="col-sm-6" data-aos="fade-down">
+            <img style=" width:100%" src="autodif_run.png" alt="Autodif Running Program Image" class="center-block" style="border: dashed 3px white; max-width:100%;">
+          </div>
+      </div>
     </section>
+    <section class="container autodif-container">
+        <div class="autodif-title">
+          <span class="ribbon2"><h3>2</h3></span>
+          <h2 style="text-align: center"><a href="https://github.com/swa181/autoDif" target="_blank">Hackathons</a></h2>
+        </div>
+        <div class="row autodif-row" >
+          <div class="col-sm-6" data-aos="fade-down">
+              <h3>
+                  September 2018 <br />
+                  <b>Lumohacks Participant @ Simon Fraser University, Burnaby</b>
+                  <ul>
+                    <li>Worked in a team of four to create a web application that focusses on providing veterans and first-responders with PTSD a platform to connect with other similar professionals</li>
+                    <li>Received a sponsor prize for creatively utilizing HERE.com’s interactive map API to visually represent people that are local to the website user</li>
+                  </ul>
+              </h3>
+            </div>
+            <div class="col-sm-6" data-aos="fade-down">
+              <h3>
+                September 2018 <br />
+                <b>VanSASH Participant @ Simon Fraser University, Vancouver </b>
+                <ul>
+                  <li>Worked in a team of four to analyze Whitecaps sales at different store locations within the stadium</li>
+                  <li>Proposed a solution for an even distribution of sales to minimize foot traffic congestion </li>
+                </ul>
+              </h3>
+            </div>
+        </div>
+      </section>
   </section>
 
   <!-- Employment -->
-  <section id="employment" class="jumbotron" style="background-color:white;">
-    <div class="container" style="border: dashed medium #416ae7">
-      <h2>Industry-Related Employment</h2>
-      <h3>// September 2018 to December 2018</br><b>Software Engineer Intern with Big Park at Microsoft, Vancouver</b>
-        <ul>
-          <li>I passed the phone and skype interviews :0</li>
-          <li>I passed the criminal check too lol</li>
-        </ul>
-      </h3>
-      <h2></br>Work Experience</h2>
-      <h3>// June 2016 to Present</br><b>Administrative Assistant at Financial Literacy Counsel, Vancouver</b>
+  <div id="WorkHeader" class="container">
+    <h5 class='heading'>Work Experience</h5>
+    <p style="color:#416ae7; text-align: center">Work and Volunteer Experience</p>
+  </div>
+  <section id="employment" >
+    <div class="container" style="border: dashed medium #d1acfa; background-color: white">
+      <h2>Work Experience</h2>
+      <h3 data-aos="fade-right">June 2016 to Present</br><b>Administrative Assistant at Financial Literacy Counsel, Vancouver</b>
         <ul>
           <li>Managing both digital and physical documents by scanning and filing them into their respective client file</li>
           <li>Preparing insurance quotes and assisting in the application‐completion process</li>
         </ul>
-        </br>// October 2016 to September 2017</br><b>Cashier at T&T Supermarket Inc., Vancouver</b>
+      </h3>
+      <h3 data-aos="fade-right">
+        </br>October 2016 to September 2017</br><b>Cashier at T&T Supermarket Inc., Vancouver</b>
         <ul>
           <li>Greeted and conversed with customers in Cantonese, Mandarin, and English regularly</li>
           <li>Reviewed Price Look‐Up (PLU) codes prior to every shift to uphold fast and accurate service</li>
         </ul>
-      </br>// August 2015 to September 2016 (Summer Positions)</br><b>Ticket Seller/Guest Services Representative at Pacific National Exhibition, Vancouver</b>
-      <ul>
-        <li>Managed calls from on‐site Guest Services booths and off‐site patrons and shared information about events</li>
-        <li>Accurately balanced and completed transactions with minimal error as indicated by daily sales reports</li>
-      </ul>
+      </h3>
+      <h3 data-aos="fade-right">
+        </br>August 2015 to September 2016 (Summer Positions)</br><b>Ticket Seller/Guest Services Representative at Pacific National Exhibition, Vancouver</b>
+        <ul>
+          <li>Managed calls from on‐site Guest Services booths and off‐site patrons and shared information about events</li>
+          <li>Accurately balanced and completed transactions with minimal error as indicated by daily sales reports</li>
+        </ul>
       </h3>
       <h2></br>Volunteer Experience</h2>
-      <h3>
+      <h3 data-aos="fade-right">
         <div class="row">
           <figure class="col-sm-6">
             <ul>
@@ -199,87 +298,77 @@
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="jumbotron" style="background-color:#78a036">
-    <div class="container">
-      <h2 style="text-align:center">About</h2>
-      <h3 style="text-align:center">
-        Starting at an early age, Sandy Wu has been creating functional content with an artisitc emphasis.
-        At around age 14, she started a YouTube channel, housing tutorials and update videos about polymer clay, that grew to a little over 400 subscribers at its height.
-        With strong entrepreneural instincts, she monopolized her artistic skills in exchange for both proprietary game and real-life currency.
-        Her current deviantArt consists of a growing fanbase of over 200 watchers.</br></br>
-        Starting around fifth grade, Sandy began designing websites through third-party services, such as Webs, Weebly, and Wix.
-        Although art is her passion, she chose to pursue computer science in an effort to creatively bridge the main ideals between science and art.</br></br>
-        When she is not studying, programming, or drawing, Sandy enjoys hiking, meeting up with friends and learning Japanese.
-      </h3>
+  <div class="about">
+    <div id="AboutHeader" class="about-title">
+      <h2 class="heading" style="margin: 5px">
+        About
+      </h2>
     </div>
-  </section>
-
-  <!-- Four Arts -->
-  <div id="artsamp" class="custrow">
-    <div class="custcolumn">
-      <img src="katamari.png" alt="Landing Page 1">
-    </div>
-    <div class="custcolumn">
-      <img src="avicropped.png" alt="GaiaOnline Avi">
-    </div>
-    <div class="custcolumn">
-      <img src="flowercropped.png">
-    </div>
-    <div class="custcolumn">
-      <img src="birdcropped.png" alt="Landing Page 1">
-    </div>
-  </div>
-
-  <footer>
-    <section class="container">
-      <div class="row">
-        <figure class="col-sm-4">
-          <img src="chibihouse.png" alt="Chibi House" style="max-width:100%">
-        </figure>
-        <figure class="col-sm-4">
-          <p>
-            Website Sections:
-            <ul>
-              <li><a href="#intro">Introduction</a></li>
-              <li><a href="#techSkills">Technical and Illustration Skills</a></li>
-              <li><a href="#autodif">Project: Automated Digital Filing System</a></li>
-              <li><a href="#employment">Work and Volunteer Experience</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#artsamp">Art Samples</a><li>
-            </ul>
-          </p>
-        </figure>
-        <figure class="col-sm-4">
-          <p>Let's Connect!
-            <ul>
-              <li>Email: sandywu1@outlook.com</li>
-              <li>Phone: (778) 302 9636</li>
-            </ul>
-          </p>
-        <figure>
+    <div class="container about-content" data-aos="fade-down">
+      <div class="row" >   
+        <h3 style="text-align:center">
+          Starting at an early age, I have been creating functional content with an artisitc emphasis.
+          At around age 14, I started a YouTube channel, housing tutorials and videos about polymer clay, that grew to a little over 400 subscribers at its height.
+          With strong entrepreneural instincts, I monopolized my artistic skills in exchange for both proprietary game and real-life currency.
+          My current deviantArt consists of a fanbase of over 190 watchers.</br></br>
+          Starting around fifth grade, I began designing websites through third-party services, such as Webs, Weebly, and Wix.
+          Although art is my passion, I chose to pursue computer science in an effort to creatively bridge the main ideals between science and art.</br></br>
+          When I am not studying, programming, or drawing, I enjoy hiking, meeting up with friends and learning Japanese.
+        </h3>
       </div>
-      <p style="text-align:center; margin:20px 0 0 0">Sandy Wu. </br>Last Updated: August 2018.</p>
-    </section>
-  </footer>
-
-  <!-- Overlay: logo, social, menu -->
-  <div class="logo">
-    <a href="index.html"><img src="homeart2.png"></a>
+    </div>
   </div>
+    <!-- <svg class="header-tail" style="position:relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" preserveAspectRatio="none">
+      <polygon fill="#d1acfa" points="0,100 50,50 500,400 0,400"/>
+    </svg> -->
+    <div >
+      <div class="container contact">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 style="text-align: center">
+              Let's Talk!
+            </h2>
+            <h3 style="text-align: center">
+              Contact me anytime
+            </h3>
+          </div>
+          <div class="col-sm-6" >
+            <ul id="socialLinks" class="list-unstyled">
+              <li><a href="https://github.com/swa181">GitHub (swa181)</a></li>
+              <li><a href="https://www.linkedin.com/in/swuqi/">LinkedIn (swuqi)</a></li>
+              <li><a href="mailto: sandywu1@outlook.com">Email (sandywu1@outlook.com)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!--Bottom-left social links-->
-  <ul id="socialLinks" class="list-unstyled">
-    <li><a href="https://github.com/swa181">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/swuqi/">LinkedIn</a></li>
-    <li><a href="https://www.deviantart.com/kamewu">deviantArt</a></li>
-  </ul>
+    <section class="footer" >
+      <div class="row">
+        <div class="col-sm-6">
+            <h1 style="font-size: 36px; ">Sandy Wu</h1>
+        </div>
+        <div class="col-sm-6">
+            <p style="text-align:center; margin:20px 0 0 0">Last Updated: September 2019.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- White Border -->
-  <div id="left"></div>
-  <div id="right"></div>
-  <div id="top"></div>
-  <div id="bottom"></div>
+  <div id="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="#Landing" style="float:left"><b>SANDY WU</b></a>
+        </div>
+        <div class="col-sm-6" style="text-align: right">
+          <a href="#AboutHeader">About</a>
+          <a href="#WorkHeader">Employment</a>
+          <a href="#autodif">Projects</a>
+          <a href="#SkillsHeader">Skills</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
