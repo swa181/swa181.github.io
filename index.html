@@ -1,374 +1,439 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <title>Sandy Wu</title>
-  <meta charset="utf-8"/>
-  <meta name="author" content="Sandy Wu">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Abel|Francois+One|Kosugi|Caveat+Brush|Source+Sans+Pro:700" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-  <link rel="icon" type="image/png" href="favicon.png">
-</head>
+		<title>Sandy Wu | New Grad Software Engineer</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Lato&family=Noto+Sans:wght@700&display=swap"
+			rel="stylesheet"
+		/>
 
-<body>
-    <section id="Landing" style="height:100%;">
-        <img src="sandy.png" alt="Sandy Chibis" style="height:100%; max-height:100%; position:absolute; top:0px; right:0px" >
-        <div class="container" style="height:100%">
-            <div class="landing-description">
-                <h1 data-aos="fade-right">SANDY WU</h1>
-                <h4>Software Engineer and Illustrator</h4>
-            </div>
-        </div>
-    </section>
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
 
-  <!-- Introduction -->
-  <svg class="header-tail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" preserveAspectRatio="none">
-      <polygon fill="#d1acfa" points="0,0 500,0 500,300 450,400"/>
-  </svg>
-  <section id="intro" class="jumbotron" style="background-color:transparent; clear: left right;">
-    <div class="container">
-      <div class="col-sm-4" style="text-align: center">
-          <img class="intro-profile" src="sandyprofile.png" height="300px"/>
-      </div>
-      <div class="col-sm-8">
-        <h1 style="color:#416ae7">Portfolio</h1>
-        <h3 style="text-align:left;" data-aos="fade-right">
-          I am currently a Computer Science Major pursuing a Bachelor of Science at Simon Fraser University.</br>
-          Based in Vancouver, Canada.
-        </h3>
-      </div>
-    </div>
-  </section>
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Technical Skills -->
-  <div id="SkillsHeader" height="150px"></div>
-  <div class="container">
-      <h5 class='heading'>SKILLS</h5>
-      <p style="color:#416ae7; text-align: center">Technical and Illustration Skills</p>
-  </div>
-  <section id="techSkills">
-    <section class="container">
-      <h2 style="color:#416ae7">Technical Skills</h2>
-      <h3>
-        As a third-year student at Simon Fraser University, I have taken courses that focused on:
-        <ul>
-          <li>Data structures and algorithms,</li>
-          <li>Discrete mathematics,</li>
-          <li>Database systems,</li>
-          <li>Compiler design,</li>
-          <li>and Low-level computer architecture using the x86 assembly language.</li>
-        </ul>
-      </h3>
-      <div class="row" data-aos="fade-down">
-        <figure class="col-sm-4">
-          <h3>
-            Languages:
-            <ul>
-                <li>Typescript</li>
-                <li>Python</li>
-                <li>C/C++</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-          </h3>
-        </figure>
-        <figure class="col-sm-4">
-          <h3>
-            Frameworks:
-            <ul>
-              <li>React.js</li>
-              <li>Node.js</li>
-            </ul>
-          </h3>
-        </figure>
-        <figure class="col-sm-4">
-          <h3>
-            Tools:
-            <ul>
-              <li>Github</li>
-              <li>Bootstrap</li>
-            </ul>
-          </h3>
-        </figure>
-      </div>
-    </section>
-    <section class="container">
-      <h2 style="color:#416ae7">Illustration Skills</h2>
-      <h3>
-        Demonstration of skill:</br>
-        <ul>
-          <li>Received Second-Prize for the 2014 Vancouver Public Library Teen Reading Club Magnet-and-Button-Design Contest.</li>
-          <li>Commissioned by clients online to illustrate custom digital drawings using Paint Tool Sai and Photoshop.</li>
-        </ul>
-      </h3>
-      <div class="row" >
-        <figure class="col-sm-4" data-aos="fade-down">
-          <h3>
-            Mediums:
-            <ul>
-              <li>Digital</li>
-              <li>Graphite/Pen</li>
-              <li>Watercolours and Ink</li>
-            </ul>
-          </br>
-          Other Misc. Mediums:
-          <ul>
-            <li>Photography</li>
-            <li>Polymer Clay</li>
-            <li>Scrapbooking</li>
-          </ul>
-          </h3>
-        </figure>
-        <figure class="col-sm-4" data-aos="fade-down">
-          <h3>
-            Tools:
-            <ul>
-              <li>Paint Tool Sai</li>
-              <li>Wacom Intuos Pen and Touch - Small</li>
-            </ul>
-          </br>
-          Other Misc. Tools:
-          <ul>
-            <li>Canon Rebel T1i</li>
-            <li>iPhone 8 plus</li>
-          </ul>
-          </h3>
-        </figure>
-        <figure class="col-sm-4">
-          <img src="chibiwacom.png" alt="Sandy with Wacom" style="max-width:100%;">
-        </figure>
+		<!-- Custom styles -->
+		<link href="./index.css" rel="stylesheet" />
+		<link rel="icon" type="image/png" href="favicon.ico" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-bg">
+			<div class="container">
+				<a class="navbar-brand navbar-title" href="#">Sandy Wu</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#work">Work</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+					</ul>
+					<div class="me-0 mb-3 mb-lg-0">
+						<a
+							class="nav-link-social"
+							href="https://github.com/swa181"
+							title="Github (swa181)"
+							target="_blank"
+						>
+							<img
+								class="social-icon mb-0 ms-2"
+								src="icons/github.png"
+								height="32px"
+								title="Github logo (swa181)"
+							/>
+						</a>
+						<a
+							class="nav-link-social"
+							href="https://www.linkedin.com/in/swuqi/"
+							title="LinkedIn (swuqi)"
+							target="_blank"
+						>
+							<img
+								class="social-icon mb-0 ms-3 ms-lg-5"
+								src="icons/linkedin.png"
+								height="32px"
+								title="LinkedIn (swuqi)"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="container container-hero">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="hero-text">
+							<h1 data-aos="fade-right" data-aos-duration="1000">
+								Hi. I'm Sandy. <br />
+								Software Engineer.
+							</h1>
+							<p data-aos="fade-right" data-aos-duration="1100">
+								I'm also an illustrator with great interest in front-end web
+								development.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img
+							class="hero-img img-fluid"
+							src="images/shibacode.gif"
+							title="Shiba coding gif"
+						/>
+					</div>
+				</div>
+			</div>
 
-      </div>
-    </section>
-  </section>
+			<h2 id="work" class="category">Work Experience</h2>
 
-  <div class="workexp">
-    <div class="workexp-title">
-      <h2 class="heading" style="margin: 5px">
-        SWE Internships
-      </h2>
-    </div>
-    <div class="container workexp-content">
-      <div class="row" >
-          <div class='col-sm-4'>
-            <img src="chibihouse.png" width="100%" style="opacity: 0.9" />
-          </div>
-          <div class="col-sm-8" data-aos="fade-right">
-              <h3>September 2018 to April 2019</br><b>Software Engineer Intern @ Big Park Microsoft, Vancouver</b>
-                <ul>
-                  <li>Utilized React, TypeScript, and Knockout to integrate the OneDrive Photos prototype into the existing OneDrive for Consumer</li>
-                  <li>Utilized React, Babylon.js and Typescript to create an equirectangular image viewer for OneDrive Business</li>
-                </ul>
-              </h3>
-          </div>
-      </div>
-    </div>
-  </div>
+			<div class="container">
+				<div
+					class="container-style container-dark container-gradient-hover"
+					data-aos="flip-up"
+				>
+					<h4>May 2020 to December 2020</h4>
+					<h3>Software Engineering Co-op @ Procurify, Vancouver</h3>
+					<ul>
+						<li>
+							Maintained the staging and production build pipeline using
+							<b>Circle CI</b> to ensure that developers can safely and
+							efficiently apply their changes to the codebase
+						</li>
+						<li>
+							Created alarms using monitoring tools such as <b>Grafana</b>,
+							<b>CloudWatch</b> and <b>New Relic</b> to alert on-call employees
+							of anomalous behavior
+						</li>
+						<li>
+							<b>Docker</b>ized an internal merge freeze application with its
+							own CircleCI build pipeline and deployed it to the production
+							<b>Kubernetes</b> cluster
+						</li>
+						<li>
+							Upgraded the staging and production Kubernetes clusters on
+							<b>AWS EKS</b>
+						</li>
+						<li>
+							Prepared the Django backend code to transfer production static
+							media files from Google Cloud Storage to AWS S3
+						</li>
+					</ul>
+				</div>
+				<div
+					class="container-style container-dark container-gradient-hover"
+					data-aos="flip-up"
+				>
+					<h4>September 2018 to April 2019</h4>
+					<h3>Software Engineer Intern @ Big Park Microsoft, Vancouver</h3>
+					<ul>
+						<li>
+							Utilized <b>React</b>, <b>TypeScript</b>, and <b>Knockout</b> to
+							integrate the OneDrive Photos prototype into the existing OneDrive
+							for Consumer
+						</li>
+						<li>
+							Utilized React, <b>Babylon.js</b> and Typescript to create an
+							equirectangular image viewer for OneDrive Business
+						</li>
+					</ul>
+				</div>
+			</div>
 
-  <!-- Personal Project Experience -->
-  <section id="autodif">
-    <div class="container">
-      <h5 class='heading'>PROJECTS</h5>
-      <p style="color:#416ae7; text-align: center">Personal Projects</p>
-    </div>
+			<h2 id="skills" class="category">Technical Skills</h2>
 
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div id="overlay" style="background-color: #416ae7">
-            <img style="opacity:0.6; width:100%" src="autodif_run.png" alt="Autodif Running Program Image" class="center-block" style="border: dashed 3px white; max-width:100%;">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          hello
-        </div>
-      </div>
-    </div> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<img
+							class="img-fluid technical-img"
+							src="images/tools.png"
+							title="Shiba building a site with a hammer"
+						/>
+					</div>
+					<div class="col-lg-4 inner-column" data-aos="fade-right">
+						<h3>Languages</h3>
+						<ul>
+							<li>Javascript/TypeScript</li>
+							<li>Python</li>
+							<li>HTML</li>
+							<li>CSS</li>
+						</ul>
+						<h3>Frameworks</h3>
+						<ul>
+							<li>React</li>
+							<li>Express</li>
+							<li>CSS Frameworks: Bootstrap, MaterialUI</li>
+						</ul>
+						<h3>Tools</h3>
+						<ul>
+							<li>Git</li>
+							<li>Node</li>
+							<li>Docker</li>
+							<li>Postgres</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-    <section class="container autodif-container">
-      <div class="autodif-title">
-        <span class="ribbon2"><h3>1</h3></span>
-        <h2 style="text-align: center"><a href="https://github.com/swa181/autoDif" target="_blank">autoDiF</a></h2>
-      </div>
-      <div class="row autodif-row" >
-        <div class="col-sm-6" data-aos="fade-right">
-            <h3>
-                Recognizing the heavy demand for repetitive labour that is required of an Administrative Assistant at Financial Literacy Counsel,
-                I devised an intuitive program that condenses the task of dragging-and-dropping digital scanned files into their respective client folders to one substantial *click*.
-                May 2018 to Present.</br></br>
-                Language: Python.</br></br>
-                Special Tools: Python's Tkinter GUI module. PyInstaller. Photoshop. Paint Tool Sai. favicon.cc.</br></br>
-              </h3>
-          </div>
-          <div class="col-sm-6" data-aos="fade-down">
-            <img style=" width:100%" src="autodif_run.png" alt="Autodif Running Program Image" class="center-block" style="border: dashed 3px white; max-width:100%;">
-          </div>
-      </div>
-    </section>
-    <section class="container autodif-container">
-        <div class="autodif-title">
-          <span class="ribbon2"><h3>2</h3></span>
-          <h2 style="text-align: center"><a href="https://github.com/swa181/autoDif" target="_blank">Hackathons</a></h2>
-        </div>
-        <div class="row autodif-row" >
-          <div class="col-sm-6" data-aos="fade-down">
-              <h3>
-                  September 2018 <br />
-                  <b>Lumohacks Participant @ Simon Fraser University, Burnaby</b>
-                  <ul>
-                    <li>Worked in a team of four to create a web application that focusses on providing veterans and first-responders with PTSD a platform to connect with other similar professionals</li>
-                    <li>Received a sponsor prize for creatively utilizing HERE.com’s interactive map API to visually represent people that are local to the website user</li>
-                  </ul>
-              </h3>
-            </div>
-            <div class="col-sm-6" data-aos="fade-down">
-              <h3>
-                September 2018 <br />
-                <b>VanSASH Participant @ Simon Fraser University, Vancouver </b>
-                <ul>
-                  <li>Worked in a team of four to analyze Whitecaps sales at different store locations within the stadium</li>
-                  <li>Proposed a solution for an even distribution of sales to minimize foot traffic congestion </li>
-                </ul>
-              </h3>
-            </div>
-        </div>
-      </section>
-  </section>
+			<h2 id="projects" class="category">Projects</h2>
 
-  <!-- Employment -->
-  <div id="WorkHeader" class="container">
-    <h5 class='heading'>Work Experience</h5>
-    <p style="color:#416ae7; text-align: center">Work and Volunteer Experience</p>
-  </div>
-  <section id="employment" >
-    <div class="container" style="border: dashed medium #d1acfa; background-color: white">
-      <h2>Work Experience</h2>
-      <h3 data-aos="fade-right">June 2016 to Present</br><b>Administrative Assistant at Financial Literacy Counsel, Vancouver</b>
-        <ul>
-          <li>Managing both digital and physical documents by scanning and filing them into their respective client file</li>
-          <li>Preparing insurance quotes and assisting in the application‐completion process</li>
-        </ul>
-      </h3>
-      <h3 data-aos="fade-right">
-        </br>October 2016 to September 2017</br><b>Cashier at T&T Supermarket Inc., Vancouver</b>
-        <ul>
-          <li>Greeted and conversed with customers in Cantonese, Mandarin, and English regularly</li>
-          <li>Reviewed Price Look‐Up (PLU) codes prior to every shift to uphold fast and accurate service</li>
-        </ul>
-      </h3>
-      <h3 data-aos="fade-right">
-        </br>August 2015 to September 2016 (Summer Positions)</br><b>Ticket Seller/Guest Services Representative at Pacific National Exhibition, Vancouver</b>
-        <ul>
-          <li>Managed calls from on‐site Guest Services booths and off‐site patrons and shared information about events</li>
-          <li>Accurately balanced and completed transactions with minimal error as indicated by daily sales reports</li>
-        </ul>
-      </h3>
-      <h2></br>Volunteer Experience</h2>
-      <h3 data-aos="fade-right">
-        <div class="row">
-          <figure class="col-sm-6">
-            <ul>
-              <li>Vancovuer Sun Run</li>
-              <li>Green Chair at BMO Marathon</li>
-              <li>Art Attack Program at Sir Matthew Begbie Elementary</li>
-              <li>KidSafe at Grandview Elementary</li>
-              <li>Food Bank at Broadway Church</li>
-              <li>Scorekeeping and Intramurals Sports at Vancovuer Technical Secondary</li>
-            <ul>
-          </figure>
-          <figure class="col-sm-6">
-            <ul>
-              <li>English Tutor at Love Your Neighbour</li>
-              <li>After School Walk from Laura Secord at Broadway Church</li>
-              <li>Bright Nights at Stanley Park</li>
-              <li>2016 Chinese New Year Celebration at International Village Mall</li>
-              <li>RBC Child Run</li>
-            <ul>
-          </figure>
-        </div>
-      </h3>
-    </div>
-  </section>
+			<div class="container">
+				<div
+					class="row container-style container-dark container-gradient-hover"
+					data-aos="fade-right"
+					data-aos-duration="700"
+				>
+					<h4>September 2021 to December 2021</h4>
+					<h2>CollaBoard8</h2>
+					<div class="col-lg-6">
+						<div class="project-desc">
+							Working in a team of four, we developed a web application that
+							facilitated real-time whiteboard collaboration. Users could
+							create, save, share and comment on boards.
+							<br /><br />
+							As a team member, I initialized a working starter project using
+							React, React Router, Express, Docker, and Postgres. I also set up
+							the development and production (uses Nginx) environments, complete
+							with documentation for my teammates. Since I had previous web-dev
+							experience, I actively reviewed my teammates' pull requests.
+							<br /><br />
+							I also implemented the following features:
+							<ul>
+								<li>
+									<b>Whiteboard Title Editor (FE/BE)</b>
+								</li>
+								<li>
+									<b>My Boards page (FE)</b> - Implemented a responsive grid
+									layout using pure CSS to display a user's whiteboard along
+									with their thumbnails, titles and last edited timestamps.
+									Using React Router, each thumbnail was linked to their
+									respective new and old boards's URL, which included the
+									whiteboard's UUIDv1 ID.
+								</li>
+								<li>
+									<b>Whiteboard rectangle brush (FE)</b> - Created a
+									rectangle-drawing brush for the Whiteboard component, an HTML
+									canvas.
+								</li>
+								<li>
+									<b>Whiteboard and Collaborator APIs (BE)</b> - The API calls
+									handled actions regarding a board and its title,
+									adding/removing a collaborator, fetching the relevant
+									collaborators for a board and the fetching of a specific
+									user's boards.
+								</li>
+							</ul>
+							<br />
+							Language: <b>Javascript.</b> <br /><br />
+							Tools:
+							<b>React. Express.js. Node. Postgres. Docker.</b>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img
+							src="images/boards.png"
+							width="100%"
+							title="Boards page for CollaBoard8"
+						/>
+						<img
+							src="images/whiteboard.png"
+							width="100%"
+							title="Whiteboard page for CollaBoard8"
+						/>
+					</div>
+				</div>
+				<div
+					class="row container-style container-dark container-gradient-hover"
+					data-aos="fade-right"
+				>
+					<h4>May 2018</h4>
+					<h2>autoDiF (Personal)</h2>
+					<div class="col-lg-6">
+						<div class="project-desc">
+							Recognizing the heavy demand for repetitive labour that is
+							required of an Administrative Assistant at Financial Literacy
+							Counsel, I devised an intuitive program that condenses the task of
+							dragging-and-dropping digital scanned files into their respective
+							client folders to one substantial *click*.
+							<br /><br />
+							Language: <b>Python.</b> <br /><br />
+							Tools: <b>Python's Tkinter GUI module. PyInstaller.</b>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img
+							src="images/autodif_run.png"
+							width="100%"
+							title="autoDiF screenshot"
+						/>
+					</div>
+				</div>
+			</div>
 
-  <div class="about">
-    <div id="AboutHeader" class="about-title">
-      <h2 class="heading" style="margin: 5px">
-        About
-      </h2>
-    </div>
-    <div class="container about-content" data-aos="fade-down">
-      <div class="row" >   
-        <h3 style="text-align:center">
-          Starting at an early age, I have been creating functional content with an artisitc emphasis.
-          At around age 14, I started a YouTube channel, housing tutorials and videos about polymer clay, that grew to a little over 400 subscribers at its height.
-          With strong entrepreneural instincts, I monopolized my artistic skills in exchange for both proprietary game and real-life currency.
-          My current deviantArt consists of a fanbase of over 190 watchers.</br></br>
-          Starting around fifth grade, I began designing websites through third-party services, such as Webs, Weebly, and Wix.
-          Although art is my passion, I chose to pursue computer science in an effort to creatively bridge the main ideals between science and art.</br></br>
-          When I am not studying, programming, or drawing, I enjoy hiking, meeting up with friends and learning Japanese.
-        </h3>
-      </div>
-    </div>
-  </div>
-    <!-- <svg class="header-tail" style="position:relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" preserveAspectRatio="none">
-      <polygon fill="#d1acfa" points="0,100 50,50 500,400 0,400"/>
-    </svg> -->
-    <div >
-      <div class="container contact">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2 style="text-align: center">
-              Let's Talk!
-            </h2>
-            <h3 style="text-align: center">
-              Contact me anytime
-            </h3>
-          </div>
-          <div class="col-sm-6" >
-            <ul id="socialLinks" class="list-unstyled">
-              <li><a href="https://github.com/swa181">GitHub (swa181)</a></li>
-              <li><a href="https://www.linkedin.com/in/swuqi/">LinkedIn (swuqi)</a></li>
-              <li><a href="mailto: sandywu1@outlook.com">Email (sandywu1@outlook.com)</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div class="container">
+				<h2 id="hacks" class="category">Hackathons</h2>
 
-    <section class="footer" >
-      <div class="row">
-        <div class="col-sm-6">
-            <h1 style="font-size: 36px; ">Sandy Wu</h1>
-        </div>
-        <div class="col-sm-6">
-            <p style="text-align:center; margin:20px 0 0 0">Last Updated: September 2019.</p>
-        </div>
-      </div>
-    </section>
+				<div
+					class="row container-style container-dark container-gradient-hover"
+					data-aos="fade-down"
+				>
+					<div class="col-lg-6">
+						<h4>September 2018</h4>
+						<h3>Lumohacks Participant @ Simon Fraser University, Burnaby</h3>
+						<ul>
+							<li>
+								Received a <b>sponsor prize</b> for creatively utilizing
+								HERE.com’s interactive map API to visually represent people that
+								are local to the website user
+							</li>
+							<li>
+								Worked in a team of four to create a web application that
+								focusses on providing veterans and first-responders with PTSD a
+								platform to connect with other similar professionals
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<h4>September 2018</h4>
+						<h3>VanSASH Participant @ Simon Fraser University, Vancouver</h3>
+						<ul>
+							<li>
+								Worked in a team of four to analyze Whitecaps sales at different
+								store locations within the stadium
+							</li>
+							<li>
+								Proposed a solution for an even distribution of sales to
+								minimize foot traffic congestion
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-  <div id="navbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="#Landing" style="float:left"><b>SANDY WU</b></a>
-        </div>
-        <div class="col-sm-6" style="text-align: right">
-          <a href="#AboutHeader">About</a>
-          <a href="#WorkHeader">Employment</a>
-          <a href="#autodif">Projects</a>
-          <a href="#SkillsHeader">Skills</a>
-        </div>
-      </div>
-    </div>
-  </div>
+			<h2 id="academia" class="category">Academia</h2>
 
-  <script src="main.js"></script>
-</body>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<img
+							class="img-fluid img-padding"
+							src="images/edu.png"
+							title="Shiba with graduation cap"
+						/>
+					</div>
+					<div class="col-lg-6">
+						<div
+							class="container-style container-border container-gradient-hover"
+							data-aos="fade-right"
+						>
+							<h4>December 2021</h4>
+							<h3>Athena Pathways Scholarship</h3>
+							<ul>
+								<li>
+									Awarded to female students with interest in learning about
+									Artificial Intelligence
+								</li>
+							</ul>
+							<br />
+							<h4>Summer 2020, Summer 2019, Spring 2018</h4>
+							<h3>Dean’s Honour Roll</h3>
+							<ul>
+								<li>
+									Awarded to students with above 3.50 GPA while taking 12 or
+									more credits
+								</li>
+							</ul>
+							<br />
+							<h4>January 2017 to April 2022</h4>
+							<h3>Simon Fraser University, Burnaby</h3>
+							<ul>
+								<li>Bachelor of Science (Computing Science Major)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<h2 id="about" class="category">About Me</h2>
+
+			<div class="container">
+				<div class="text-center" data-aos="fade-down">
+					I've loved drawing and designing websites since I was in elementary
+					school. It was not a coincidence when I decided to pursue computer
+					science as my main career and kept illustration as my freelance side
+					project.
+					<br /><br />
+					Since 2020, I have been posting my artwork on Instagram under the
+					alias @yogurt.pan. Under the same name, I sell prints of my artwork on
+					Etsy and print-on-demand sites (RedBubble and InPrnt). I have a strong
+					entrepreneurial spirit and would love to work on projects that improve
+					the customer and seller experience. :)
+					<br /><br />
+					When I am not working on my illustration and coding projects, I enjoy
+					reading books and playing Animal Crossing: New Horizons.
+					<br />
+					Prior to COVID 2020, I enjoyed hiking new trails and trying new
+					restaurants with my friends.
+				</div>
+			</div>
+
+			<div
+				class="text-center future-work"
+				data-aos="fade-in"
+				data-aos-duration="1300"
+			>
+				<h2>Got an exciting opportunity?</h2>
+				<p>
+					I am currently looking for full-time New Grad work. Message me on
+					<a href="https://www.linkedin.com/in/swuqi/" target="_blank"
+						>LinkedIn (swuqi)</a
+					>.
+				</p>
+			</div>
+
+			<footer class="text-center">
+				All illustrations drawn by Sandy Wu. Built using Bootstrap and AOS.
+				<br />Last updated in January 2022.
+			</footer>
+		</main>
+		<script>
+			AOS.init({ once: true, duration: 700 });
+		</script>
+	</body>
 </html>

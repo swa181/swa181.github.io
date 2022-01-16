@@ -1,0 +1,168 @@
+:root {
+	--main-accent-color: rgb(155, 165, 255);
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: rgb(48, 11, 216);
+	background: rgb(203, 193, 252);
+}
+
+::selection {
+	color: rgb(48, 11, 216);
+	background: rgb(203, 193, 252);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fefaf6;
+	color: #232323;
+	font-size: large;
+}
+
+.navbar-bg {
+	background-color: #fefaf6;
+}
+
+.navbar-logo {
+	height: 1.5em;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Noto Sans", sans-serif;
+	font-display: optional;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	font-size: 1.4em;
+}
+
+li {
+	margin-top: 6px;
+}
+
+.container-style {
+	padding: 42px 24px;
+	border-radius: 25px;
+	margin: 30px 0px;
+}
+
+.container-style h2 {
+	font-size: 2.5em;
+	margin: 8px 0;
+}
+
+.container-border {
+	border-style: dashed;
+}
+
+/* https://codepen.io/Sarathkumar/post/css-hover-card-smooth-shadow */
+.container-gradient-hover:hover {
+	box-shadow: 1px 8px 20px grey;
+	box-shadow: 0.4s ease-in;
+	-webkit-transition: box-shadow 0.4s ease-in;
+}
+
+.hero-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hero-img {
+	padding: 10vh;
+}
+
+.subtitle {
+	height: 45px;
+}
+
+.category {
+	font-family: "Gaegu", cursive;
+	font-weight: bolder;
+	margin-top: 10vh;
+	font-size: 3em;
+	scroll-margin-top: 63px;
+	text-align: center;
+}
+
+.navbar-title {
+	font-family: "Gaegu", cursive;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.nav-item {
+	margin: 0px 10px;
+}
+
+.inner-column {
+	margin: 10px 0px;
+}
+
+.future-work {
+	padding: 17vh 0px;
+}
+
+.img-padding {
+	padding: 0 2.5vw;
+}
+
+.technical-img {
+	padding: 6vh 2vw 1vh;
+}
+
+img {
+	margin: 0 0 20px;
+}
+
+.social-icon {
+	opacity: 90%;
+}
+
+.social-icon:hover {
+	filter: invert(67%) sepia(95%) saturate(4903%) hue-rotate(216deg)
+		brightness(100%) contrast(94%);
+}
+
+.container-dark {
+	background-color: #1e1e1e;
+	color: rgb(236, 232, 229);
+}
+
+.container-dark h2 {
+	color: var(--main-accent-color);
+}
+
+.container-dark h3 {
+	color: var(--main-accent-color);
+}
+
+.container-dark b {
+	color: #dd5782;
+}
+
+footer {
+	margin: 0 0 36px;
+}
+
+.project-desc {
+	margin-bottom: 2em;
+}
+
+.nav-link-social {
+	text-decoration: none;
+}
+
+.container-hero {
+	display: block;
+	padding-top: 3vh;
+}
