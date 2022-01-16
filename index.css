@@ -1,28 +1,31 @@
 :root {
 	--main-accent-color: rgb(155, 165, 255);
+	--main-bg-color: #fefaf6;
+	--highlight-text-color: rgb(48, 11, 216);
+	--highlight-bg-color: rgb(203, 193, 252);
 }
 
 ::-moz-selection {
 	/* Code for Firefox */
-	color: rgb(48, 11, 216);
-	background: rgb(203, 193, 252);
+	color: var(--highlight-text-color);
+	background: var(--highlight-bg-color);
 }
 
 ::selection {
-	color: rgb(48, 11, 216);
-	background: rgb(203, 193, 252);
+	color: var(--highlight-text-color);
+	background: var(--highlight-bg-color);
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #fefaf6;
+	background-color: var(--main-bg-color);
 	color: #232323;
 	font-size: large;
 }
 
 .navbar-bg {
-	background-color: #fefaf6;
+	background-color: var(--main-bg-color);
 }
 
 .navbar-logo {
@@ -47,6 +50,16 @@ p {
 
 li {
 	margin-top: 6px;
+}
+
+.custom-link {
+	color: rgb(44 64 249);
+	text-decoration: var(--highlight-bg-color) underline;
+	font-weight: bold;
+}
+
+.custom-link:hover {
+	color: var(--highlight-text-color);
 }
 
 .container-style {
