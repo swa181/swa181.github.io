@@ -3,6 +3,7 @@
 	--main-bg-color: #fefaf6;
 	--highlight-text-color: rgb(48, 11, 216);
 	--highlight-bg-color: rgb(203, 193, 252);
+	--navbar-height: 63px;
 }
 
 ::-moz-selection {
@@ -22,6 +23,7 @@ body {
 	background-color: var(--main-bg-color);
 	color: #232323;
 	font-size: large;
+	width: 100%;
 }
 
 .navbar-bg {
@@ -90,10 +92,6 @@ li {
 	transform: translateY(-50%);
 }
 
-.hero-img {
-	padding: 10vh;
-}
-
 .subtitle {
 	height: 45px;
 }
@@ -103,7 +101,7 @@ li {
 	font-weight: bolder;
 	margin-top: 10vh;
 	font-size: 3em;
-	scroll-margin-top: 63px;
+	scroll-margin-top: var(--navbar-height);
 	text-align: center;
 }
 
@@ -177,5 +175,5 @@ footer {
 
 .container-hero {
 	display: block;
-	padding-top: 3vh;
+	padding-top: calc(3vh + var(--navbar-height));
 }
